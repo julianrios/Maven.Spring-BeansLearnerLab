@@ -48,4 +48,14 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
     public Iterator<PersonType> iterator() {
         return personList.iterator();
     }
+
+    @Override
+    public String toString() {
+        String people = "";
+        for(PersonType person : personList) {
+            people += "id: " + person.getId() + "\n";
+            people += "name: " + person.getName() + "\n";
+        }
+        return people;
+    }
 }

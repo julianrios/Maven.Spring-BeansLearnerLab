@@ -11,7 +11,7 @@ public class StudentConfig {
     @Bean(name = "students")
     public Students currentStudents() {
         Students studentsList = new Students(new ArrayList<>());
-        studentsList.add(new Student(2L, "Julian"));
+        studentsList.add(new Student(3L, "Julian"));
         studentsList.add(new Student(4L, "Bryan"));
         return studentsList;
     }

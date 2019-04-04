@@ -11,18 +11,18 @@ import java.util.ArrayList;
 @Configuration
 public class InstructorsConfig {
 
-    @Bean
+    @Bean(name = "usa")
     public Instructors tcUsaInstructors() {
         Instructors instructors = new Instructors(new ArrayList<>());
-        instructors.add(new Instructor(3L, "Leon"));
+        instructors.add(new Instructor(3L, "Kris"));
         instructors.add(new Instructor(4L, "Nhu"));
         return instructors;
     }
 
-    @Bean
+    @Bean(name = "uk")
     public Instructors tcUKInstructors() {
         Instructors instructors = new Instructors(new ArrayList<>());
-        instructors.add(new Instructor(5L, "Kris"));
+        instructors.add(new Instructor(5L, "Leon"));
         instructors.add(new Instructor(6L, "Dolio"));
         return instructors;
     }
