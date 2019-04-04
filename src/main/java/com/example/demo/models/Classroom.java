@@ -3,19 +3,18 @@ package com.example.demo.models;
 import com.example.demo.repositories.Teacher;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Classroom {
-    List<Instructors> instructorsList;
-    List<Students> studentsList;
+    Students students;
+    Instructors instructors;
 
-    public Classroom(List<Instructors> instructorsList, List<Students> studentsList) {
-        this.instructorsList = instructorsList;
-        this.studentsList = studentsList;
+    public Classroom(Students students, Instructors instructors) {
+        this.students = students;
+        this.instructors = instructors;
     }
 
-    public void hostLecture(Teacher teacher, double numberOfHours) {
-        teacher.lecture(new ArrayList<>(10), numberOfHours);
+    public void hostLecture(Teacher teacher, Double numberOfHours) {
+        teacher.lecture(students,numberOfHours);
     }
 
 }

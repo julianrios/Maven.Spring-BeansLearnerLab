@@ -12,6 +12,7 @@ public class StudentConfig {
     public Students currentStudents() {
         Students studentsList = new Students(new ArrayList<>());
         studentsList.add(new Student(2L, "Julian"));
+        studentsList.add(new Student(4L, "Bryan"));
         return studentsList;
     }
 
@@ -19,6 +20,7 @@ public class StudentConfig {
     public Students previousStudents() {
         Students previousStudentsList = new Students(new ArrayList<>());
         previousStudentsList.add(new Student(1L, "Jon"));
+        previousStudentsList.add(new Student(2L, "Connor"));
         return previousStudentsList;
     }
 }

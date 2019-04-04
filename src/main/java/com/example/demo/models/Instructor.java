@@ -16,14 +16,14 @@ public class Instructor extends Person implements Teacher {
 
     @Override
     public void lecture(Iterable<? extends Learner> learners, double numberOfHours) {
-        for (Learner obj : learners) {
-            obj.learn(numberOfHours/getSize(learners));
+        for (Learner learner : learners) {
+            learner.learn(numberOfHours/getSize(learners));
         }
     }
 
     public int getSize(Iterable<? extends Learner> learners) {
         int size = 0;
-        for (Learner obj : learners) {
+        for (Learner learner : learners) {
             size++;
         }
         return size;

@@ -40,13 +40,8 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
         return null;
     }
 
-    public void findAll() {
-//        for(PersonType person : personList) {
-//            System.out.println(person);
-//        }
-        personList.stream()
-                .map(personType -> personList)
-                .forEach(System.out::println);
+    public List<PersonType> findAll() {
+        return personList;
     }
 
     @Override
