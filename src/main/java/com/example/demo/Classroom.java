@@ -1,8 +1,4 @@
-package com.example.demo.models;
-
-import com.example.demo.repositories.Teacher;
-
-import java.util.ArrayList;
+package com.example.demo;
 
 public class Classroom {
     Students students;

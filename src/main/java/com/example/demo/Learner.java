@@ -1,4 +1,4 @@
-package com.example.demo.repositories;
+package com.example.demo;
 
 public interface Learner {
     void learn(double numberOfHours);

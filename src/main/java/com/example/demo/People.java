@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.example.demo;
 
 import java.util.Collection;
 import java.util.Iterator;

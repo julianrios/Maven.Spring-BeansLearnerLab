@@ -1,5 +1,7 @@
-package com.example.demo.models;
+package com.example.demo;
 
+import com.example.demo.Instructor;
+import com.example.demo.Instructors;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

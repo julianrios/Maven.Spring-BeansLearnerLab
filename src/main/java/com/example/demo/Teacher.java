@@ -1,4 +1,6 @@
-package com.example.demo.repositories;
+package com.example.demo;
+
+import com.example.demo.Learner;
 
 public interface Teacher {
     void teach(Learner learner, double numberOf);

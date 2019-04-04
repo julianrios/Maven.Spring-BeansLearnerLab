@@ -1,4 +1,7 @@
-package com.example.demo.models;
+package com.example.demo;
+
+import com.example.demo.People;
+import com.example.demo.Student;
 
 import java.util.List;
 

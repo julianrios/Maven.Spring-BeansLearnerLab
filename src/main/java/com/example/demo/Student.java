@@ -1,6 +1,7 @@
-package com.example.demo.models;
+package com.example.demo;
 
-import com.example.demo.repositories.Learner;
+import com.example.demo.Learner;
+import com.example.demo.Person;
 
 public class Student extends Person implements Learner {
     private double totalStudyTime = 0;

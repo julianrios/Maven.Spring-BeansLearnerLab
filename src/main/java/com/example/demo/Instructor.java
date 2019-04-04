@@ -1,7 +1,4 @@
-package com.example.demo.models;
-
-import com.example.demo.repositories.Learner;
-import com.example.demo.repositories.Teacher;
+package com.example.demo;
 
 public class Instructor extends Person implements Teacher {
 
